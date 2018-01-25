@@ -1,0 +1,8 @@
+{
+  "name": "reimagine-new-hire-process",
+  "version": "1.0.0",
+  "description": "A project that re-defines the hiring process",
+  "main": "index.js",
+  "author": "pabhishek.2009@gmail.com",
+  "license": "ISC"
+}
