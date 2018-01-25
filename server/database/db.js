@@ -7,6 +7,8 @@ module.exports = function(app) {
             process.exit(1);
         } else {
             const db = database;
+            // Creating the database instance at the app level which can be used for db transactions
+            app.set('db', db);
             console.log("Database connection ready");
         }    
     });
