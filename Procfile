@@ -1,1 +1,2 @@
-web: forever index.js
+web: ng build && forever index.js
+
