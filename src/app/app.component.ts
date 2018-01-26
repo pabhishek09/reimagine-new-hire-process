@@ -1,6 +1,6 @@
 import { Component, OnInit  } from '@angular/core';
-import { Http } from '@angular/http';
-import { environment } from '../environments/environment';
+import { HttpService } from '../shared/services/http.service';
+import { APIEndpoints } from '../assets/endpoints.constant';
 
 
 @Component({
@@ -11,13 +11,12 @@ import { environment } from '../environments/environment';
 export class AppComponent implements OnInit  {
   title = 'app';
 
-  constructor(private http: Http) {
+  constructor(private http: HttpService) {
 
   }
 
   ngOnInit() {
-    const url = environment.apiBaseURL + 'user';
-    this.http.get(url)
+    this.http.get(APIEndpoints.user)
       .subscribe((data) => {
         console.log(data);
       });
