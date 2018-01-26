@@ -1,1 +1,2 @@
-web: ng build --prod && forever index.js
+web: npm run build && forever server.js
+
