@@ -1,2 +1,3 @@
-web: npm run build && forever server.js
+web: forever server.js
+
 
