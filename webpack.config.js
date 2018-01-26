@@ -10,7 +10,7 @@ const cssnano = require('cssnano');
 
 const { NoEmitOnErrorsPlugin, SourceMapDevToolPlugin, NamedModulesPlugin } = require('webpack');
 const NamedLazyChunksWebpackPlugin = require('angular-named-lazy-chunks-webpack-plugin');
-const BaseHrefWebpackPlugin = require('base-href-webpack-plugin');
+const BaseHrefWebpackPlugin  = require('angular-named-lazy-chunks-webpack-plugin');
 const { CommonsChunkPlugin } = require('webpack').optimize;
 const { AotPlugin } = require('@ngtools/webpack');
 
@@ -407,7 +407,7 @@ module.exports = {
         }
     }
     }),
-    // new BaseHrefWebpackPlugin(),
+    new BaseHrefWebpackPlugin(),
     new CommonsChunkPlugin({
       "name": [
         "inline"
