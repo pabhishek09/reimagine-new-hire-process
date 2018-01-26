@@ -407,7 +407,7 @@ module.exports = {
         }
     }
     }),
-    new BaseHrefWebpackPlugin({ baseHref: '/' }),
+    // new BaseHrefWebpackPlugin({ baseHref: '/' }),
     new CommonsChunkPlugin({
       "name": [
         "inline"
