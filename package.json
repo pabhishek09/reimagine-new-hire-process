@@ -35,7 +35,8 @@
     "forever": "^0.15.3",
     "mongodb": "^2.1.6",
     "morgan": "^1.9.0",
-    "dotenv": "^4.0.0"
+    "dotenv": "^4.0.0",
+    "angular-named-lazy-chunks-webpack-plugin": "^1.1.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^4.2.4",
@@ -44,7 +45,6 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
-    "angular-named-lazy-chunks-webpack-plugin": "^1.1.0",
     "autoprefixer": "^6.5.3",
     "base-href-webpack-plugin": "^1.0.2",
     "circular-dependency-plugin": "^3.0.0",
