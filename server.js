@@ -8,6 +8,9 @@ dotenv.config();
 // Start express
 require('./server/express')(app, express);
 
+//generate qr-code
+require('./qr-code/generateCode');
+
 // Initialize the app.
 const server = app.listen(process.env.PORT || 3000, function () {
   const port = server.address().port;

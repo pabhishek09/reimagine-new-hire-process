@@ -9,6 +9,14 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <app-root></app-root>
+    <canvas id="canvas"></canvas>
+    <app-root></app-root>
+    <script src="../node_modules/qrcode/build/qrcode.min.js"></script>
+    <!-- <script>
+     QRCode.toCanvas(document.getElementById('canvas'), 'sample text', function (error) {
+      if (error) console.error(error)
+      console.log('success!');
+    })
+  </script> -->
 </body>
 </html>
